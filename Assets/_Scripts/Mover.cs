@@ -13,16 +13,30 @@ public class Mover : MonoBehaviour
     bool isMoving;
     Animator animator;
     Rigidbody2D rb2d;
+    PlayerInput playerInput;
+    private void OnEnable()
+    {
+        playerInput.moveAction += Move;
+    }
+    private void OnDisable()
+    {
+        playerInput.moveAction -= Move;
+    }
     private void Awake() {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        playerInput = GetComponent<PlayerInput>();
     }
     void Start()
     {
         rb2d.drag = brakingSpeed;
     }
 
-    
+    void Move(Vector2 moveVector)
+    {
+        moveDir = moveVector;
+    }
+    /*
     void Update()
     {        
         if(Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0){
@@ -42,10 +56,13 @@ public class Mover : MonoBehaviour
         animator.SetFloat("xValue", lastMoveDir.x);
         animator.SetFloat("yValue", lastMoveDir.y);
     }
+    */
     private void FixedUpdate() {
         if(canMove)        
         rb2d.velocity = moveDir * moveSpeed;
+        
     }
+    
     public void DisableControl(float time){
         if(!canMove) return;
         canMove = false;
