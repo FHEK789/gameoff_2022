@@ -527,8 +527,14 @@ MonoBehaviour:
   sideSprites:
   - {fileID: 1493308655, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
   - {fileID: 1247321324, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
-  frontSprites: []
-  backSprites: []
+  - {fileID: 669361177, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  - {fileID: 1020067098, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  frontSprites:
+  - {fileID: 2078752516, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  - {fileID: -1718829571, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  backSprites:
+  - {fileID: 91290449, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  - {fileID: 1653435687, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
   changeTime: 0.1
 --- !u!1 &1454469061
 GameObject:

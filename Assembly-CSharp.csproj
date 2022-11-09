@@ -57,15 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\_Scripts\Interacter.cs" />
     <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1Slider.cs" />
     <Compile Include="Assets\_Scripts\Mover.cs" />
     <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1PointToHit.cs" />
     <Compile Include="Assets\_Scripts\ShelfLogic.cs" />
+    <Compile Include="Assets\_Scripts\PlayerInput.cs" />
     <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1Script.cs" />
     <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1End.cs" />
     <Compile Include="Assets\_Scripts\TEST.cs" />
-    <Compile Include="Assets\_Scripts\PlayerInput.cs" />
-    <Compile Include="Assets\_Scripts\Interacter.cs" />
     <Compile Include="Assets\_Scripts\CharacterAnimator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -840,9 +840,17 @@
       <Project>{A8222FB8-D8CA-CF57-282D-750CDCEF5E77}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{4BB42E23-0C64-5E56-D10C-ABF4FBE169DC}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{EFCE46E2-2555-2DD9-7FA1-9181E25A0C39}</Project>
       <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{45E367DC-B107-58F0-D2A1-BAEF7D661A83}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
       <Project>{A73FB906-3E96-E87B-D610-F4D1FE1AF101}</Project>
@@ -883,14 +891,6 @@
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{2414548E-BB26-32D5-4E4B-807EBC3CBC5C}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{45E367DC-B107-58F0-D2A1-BAEF7D661A83}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{4BB42E23-0C64-5E56-D10C-ABF4FBE169DC}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
