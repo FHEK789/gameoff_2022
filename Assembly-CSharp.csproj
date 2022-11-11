@@ -37,13 +37,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\_Scripts\Interacter.cs" />
      <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1Slider.cs" />
      <Compile Include="Assets\_Scripts\Mover.cs" />
      <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1PointToHit.cs" />
      <Compile Include="Assets\_Scripts\ShelfLogic.cs" />
+     <Compile Include="Assets\_Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\_Scripts\GameManager.cs" />
      <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1Script.cs" />
+     <Compile Include="Assets\_Scripts\FakeDatabase.cs" />
      <Compile Include="Assets\_Scripts\MiniGame1\MiniGame1End.cs" />
-     <Compile Include="Assets\_Scripts\TEST.cs" />
+     <Compile Include="Assets\_Scripts\CharacterAnimator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -813,9 +817,17 @@
       <Project>{ad538b86-0103-8738-2f5c-0cb40754bedd}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{5bb7997c-48ad-622a-7ca4-db0ad9dc4ffb}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{2f86a1cb-5345-cc0d-242c-e3f557995345}</Project>
       <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{4fd2bd4f-dcea-b8a5-1433-627a6962de05}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
       <Project>{3733c993-6ce5-1854-b5f5-9035a7083712}</Project>

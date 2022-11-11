@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MiniGame1Script : MonoBehaviour
 {
-    
+    public static MiniGame1Script Instance;
     [Header("Customizable Variables")]
     [Space(15)]
     [Header("Minigame")]
@@ -32,21 +32,45 @@ public class MiniGame1Script : MonoBehaviour
     BoxCollider2D pointCollider;
     //TODO RIGHT INPUT
     [Header("TEST")]
-    [SerializeField] GameObject item;
-    
-    //string winner = "not set";
+    [SerializeField] GameObject itemObject;
+    Item item;
+    Action action;
     bool gameEnded = false;
-    public void StartFight(GameObject player)
+    float timer;
+    private void Awake() {
+        if(Instance == null){
+            Instance = this;
+            return;
+        }
+        Destroy(this);
+    }
+    public void StartFight(Item item, Action action)
     {
+        this.action = action;
+        this.item = item;        
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         transform.position = player.transform.position;
-        player.GetComponent<Mover>().canMove = false;
+        ResetGame();
+        player.GetComponent<Mover>().canMove = false;        
         gameObject.SetActive(true);
     }
+
+    private void ResetGame()
+    {
+        timer = waitTime;
+        //state
+        gameEnded = false;
+        //positions
+        itemObject.transform.position = new Vector3(transform.position.x, itemObject.transform.position.y, itemObject.transform.position.z);
+
+
+    }
+
     private void Start() {
         sliderCollider = slider.GetComponent<BoxCollider2D>();
         pointCollider = point.GetComponent<BoxCollider2D>();
-
         Initialization();
+        
     }
     private void Initialization()
     {
@@ -54,45 +78,51 @@ public class MiniGame1Script : MonoBehaviour
         slider.Init(upPushForce);
         //pointhit
         point.Init(changeSpeed, minChangeTime, maxChangeTime);
+        gameObject.SetActive(false);
     }
     void Update()
     {        
-        if(gameEnded){
-            if(waitTime > 0){
-                waitTime -= Time.deltaTime;
+        if(gameEnded){            
+            if(timer > 0){
+                timer -= Time.deltaTime;
             }
             else{
                 textMeshPro.gameObject.SetActive(false);
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Mover>().canMove = true;
-                transform.parent.gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
         else{
-            if(item.transform.position.x > enemyWinTransform.position.x){
+            if(itemObject.transform.position.x > enemyWinTransform.position.x){
                 Debug.Log("enemy win");
+                gameEnded = true;
+
             }
-            else if(item.transform.position.x < playerWinTransform.position.x){
+            else if(itemObject.transform.position.x < playerWinTransform.position.x){
                 Debug.Log("player win");
+                gameEnded = true;
+                action();
+                return;
             }
             DuelLogic();
         }
         
     }
     private void DuelLogic(){
-        //move to the player
+        //move to the player        
         if(Physics2D.IsTouching(sliderCollider, pointCollider)){
             
-            item.transform.position = new Vector3(
-                    item.transform.position.x - itemSpeed * Time.deltaTime, 
-                    item.transform.position.y, 
-                    item.transform.position.z);
+            itemObject.transform.position = new Vector3(
+                    itemObject.transform.position.x - itemSpeed * Time.deltaTime, 
+                    itemObject.transform.position.y, 
+                    itemObject.transform.position.z);
         }
         //move away
         else{
-            item.transform.position = new Vector3(
-                    item.transform.position.x + itemSpeed * Time.deltaTime, 
-                    item.transform.position.y, 
-                    item.transform.position.z);
+            itemObject.transform.position = new Vector3(
+                    itemObject.transform.position.x + itemSpeed * Time.deltaTime, 
+                    itemObject.transform.position.y, 
+                    itemObject.transform.position.z);
         }
     }
     

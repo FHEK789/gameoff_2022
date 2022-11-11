@@ -8,7 +8,7 @@ public class MiniGame1PointToHit : MonoBehaviour
     float minChangeTime = 0.5f;
     float maxChangeTime = 2f;
     Vector3 newTargetPosition;
-    void Start()
+    void OnEnable()
     {
         newTargetPosition = transform.position;
         StartCoroutine(RandomizePosition());
@@ -24,6 +24,7 @@ public class MiniGame1PointToHit : MonoBehaviour
             //mew Y position
             newTargetPosition = new Vector3(transform.position.x, Random.Range(transform.parent.transform.position.y-5.5f, transform.parent.transform.position.y+9.4f), 0);
             //random time
+            Debug.Log(newTargetPosition);
             yield return new WaitForSeconds(Random.Range(minChangeTime, maxChangeTime));
         }
     }
@@ -31,5 +32,8 @@ public class MiniGame1PointToHit : MonoBehaviour
         changeSpeed = speed;
         this.minChangeTime = minChangeTime;
         this.maxChangeTime = maxChangeTime;
+    }
+    private void OnDisable() {
+        StopAllCoroutines();
     }
 }
