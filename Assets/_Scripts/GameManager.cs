@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System;
 
 public class GameManager : MonoBehaviour
 {   
@@ -10,8 +12,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] int numberOfItemsToFind = 3;
     FakeDatabase fakeDatabase;
     [SerializeField] MiniGame1Script minigame;
+    [SerializeField] TextMeshProUGUI timerTmPro;
+    float timerGame;
+    TimeSpan timeSpan;
     void Start()
     {
+        timerGame = 0;        
         fakeDatabase = GetComponent<FakeDatabase>();
         //find all shelfs
         ShelfLogic[] shelfs = FindObjectsOfType<ShelfLogic>();
@@ -22,7 +28,7 @@ public class GameManager : MonoBehaviour
         //random items            
         for (int i = 0; i < numberOfItemsToFind; i++)
         {
-            int rndIndex = Random.Range(0, list.Count);
+            int rndIndex = UnityEngine.Random.Range(0, list.Count);
             for (int j = 0; j < list.Count; j++)
             {
                 //add to find list 
@@ -38,7 +44,7 @@ public class GameManager : MonoBehaviour
         List<ShelfLogic> shelfList = new List<ShelfLogic>(FindObjectsOfType<ShelfLogic>());
         for (int i = 0; i < numberOfItemsToFind; i++)
         {
-            int rndIndex = Random.Range(0, shelfList.Count);
+            int rndIndex = UnityEngine.Random.Range(0, shelfList.Count);
             for (int j = 0; j < shelfList.Count; j++)
             {
                 //add to find list 
@@ -54,10 +60,15 @@ public class GameManager : MonoBehaviour
         //random other items for all remaining shelfs
         foreach (ShelfLogic shelf in shelfList)
         {
-            int rnd = Random.Range(0, list.Count);
+            int rnd = UnityEngine.Random.Range(0, list.Count);
             shelf.Initialization(list[rnd]);
         }
         //create minigame
         Instantiate(minigame);
+    }
+    private void Update() {
+        timerGame += Time.deltaTime;
+        timeSpan = TimeSpan.FromSeconds(timerGame);
+        timerTmPro.text = string.Format("{0:D2}:{1:D2}:{2:D2}:{3:D3}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds);
     }
 }

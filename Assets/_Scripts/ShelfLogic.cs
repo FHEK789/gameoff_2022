@@ -12,8 +12,11 @@ public enum ShelfState
 }
 public class ShelfLogic : MonoBehaviour
 {   
-    Action callbackAction;
+    Action<bool> callbackAction;
     [SerializeField] float timeToRestock = 5f;
+    [Header("Battle is checked vs random float 0-1")]
+    [Range(0,1)]
+    [SerializeField] float fightChance = 0.25f;
     [Header("HANDS AWAY!")]
     [SerializeField] Sprite[] timerSprites;
     [SerializeField] SpriteRenderer child;    
@@ -74,14 +77,27 @@ public class ShelfLogic : MonoBehaviour
             state = ShelfState.idle;
             return;
         }
-        //-> wait for end of fight  
-        MiniGame1Script.Instance.StartFight(item, callbackAction);
-        state = ShelfState.stop;
+        float rnd = UnityEngine.Random.Range(0f,1f);
+        Debug.Log("random number is: "+rnd+" chcecket vs: "+fightChance);
+        if(rnd < fightChance){
+            //fight
+            MiniGame1Script.Instance.StartFight(item, callbackAction);
+            state = ShelfState.stop;
+            return;
+        }
+        else{
+            //just take
+            MinigameEnd(true);
+        }
+                
+        
     }
 
-    private void MinigameEnd()
+    private void MinigameEnd(bool isWinner)
     {
-        FakeDatabase.Instance.AddToPlayerList(item);
+        if(isWinner){
+            FakeDatabase.Instance.AddToPlayerList(item);
+        }        
         state = ShelfState.restock;
         hasItem = false;
         timer = 0;

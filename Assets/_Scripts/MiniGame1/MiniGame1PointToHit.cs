@@ -13,8 +13,6 @@ public class MiniGame1PointToHit : MonoBehaviour
         newTargetPosition = transform.position;
         StartCoroutine(RandomizePosition());
     }
-
-    
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, newTargetPosition, changeSpeed * Time.deltaTime);

@@ -1,7 +1,8 @@
 using UnityEngine;
-
+using TMPro;
 using System;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 [Serializable]
 public struct Item{
@@ -9,6 +10,9 @@ public struct Item{
     public string name;
 }
 public class FakeDatabase : MonoBehaviour {
+    Action onListChange;
+    [SerializeField] GameObject listObject;
+    [SerializeField] GameObject itemPrefab;
     public static FakeDatabase Instance;
     public List<Item> items;
     public List<Item> goalList = new();
@@ -20,6 +24,12 @@ public class FakeDatabase : MonoBehaviour {
         }
         Destroy(this);
         return;
+    }
+    private void OnEnable() {
+        onListChange += RedrawList;
+    }
+    private void OnDisable() {
+        onListChange -= RedrawList;
     }
     private void Start() {
         GenerateGoalList();
@@ -33,6 +43,7 @@ public class FakeDatabase : MonoBehaviour {
     }
     public void AddToPlayerList(Item item){
         playerList.Add(item);
+        onListChange?.Invoke();
         //check if player have all items
         if(CheckCompleteItemList()){
             Debug.Log("complete!!!!");
@@ -51,5 +62,22 @@ public class FakeDatabase : MonoBehaviour {
 
     public void AddToGoalList(Item item){
         goalList.Add(item);
+        onListChange?.Invoke();
+    }
+    void RedrawList(){
+        //clear
+        foreach (Transform transform in listObject.transform)
+        {
+            Destroy(transform.gameObject);
+        }
+        //draw
+        foreach (var item in goalList)
+        {
+            GameObject go = Instantiate(itemPrefab, listObject.transform);
+            go.GetComponent<Image>().sprite = item.sprite;
+            if(playerList.Contains(item)) go.GetComponentInChildren<TextMeshProUGUI>().fontStyle = FontStyles.Strikethrough;
+            else go.GetComponentInChildren<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
+            go.GetComponentInChildren<TextMeshProUGUI>().text = item.name;
+        }
     }
 }

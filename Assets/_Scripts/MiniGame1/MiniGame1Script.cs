@@ -34,7 +34,7 @@ public class MiniGame1Script : MonoBehaviour
     [Header("TEST")]
     [SerializeField] GameObject itemObject;
     Item item;
-    Action action;
+    Action<bool> action;
     bool gameEnded = false;
     float timer;
     private void Awake() {
@@ -44,15 +44,17 @@ public class MiniGame1Script : MonoBehaviour
         }
         Destroy(this);
     }
-    public void StartFight(Item item, Action action)
+    public void StartFight(Item item, Action<bool> action)
     {
         this.action = action;
-        this.item = item;        
+        this.item = item;
+        itemObject.GetComponent<SpriteRenderer>().sprite = item.sprite;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         transform.position = player.transform.position;
         ResetGame();
-        player.GetComponent<Mover>().canMove = false;        
+        player.GetComponent<Mover>().canMove = false;
         gameObject.SetActive(true);
+        textMeshPro.text = "";
     }
 
     private void ResetGame()
@@ -70,7 +72,6 @@ public class MiniGame1Script : MonoBehaviour
         sliderCollider = slider.GetComponent<BoxCollider2D>();
         pointCollider = point.GetComponent<BoxCollider2D>();
         Initialization();
-        
     }
     private void Initialization()
     {
@@ -93,15 +94,20 @@ public class MiniGame1Script : MonoBehaviour
             }
         }
         else{
+            textMeshPro.gameObject.SetActive(true);
             if(itemObject.transform.position.x > enemyWinTransform.position.x){
-                Debug.Log("enemy win");
+                Debug.Log("enemy win");                
+                textMeshPro.text = "YOU LOSE";
                 gameEnded = true;
+                action(false);
+                return;
 
             }
             else if(itemObject.transform.position.x < playerWinTransform.position.x){
                 Debug.Log("player win");
+                textMeshPro.text = "YOU WIN";
                 gameEnded = true;
-                action();
+                action(true);
                 return;
             }
             DuelLogic();
