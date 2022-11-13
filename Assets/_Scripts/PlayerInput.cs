@@ -6,17 +6,20 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] KeyCode interactKeay;
-    public Action<Vector2> moveAction;
+    Mover mover;    
     public Action<bool> interactAction;
     Vector2 lastDir = Vector2.zero;
     bool canMove = true;
+    private void Awake() {
+        mover = GetComponent<Mover>();
+    }
     void Update()
     {
         
         Vector2 newDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         if(!canMove) newDir = Vector2.zero;
         if(newDir != lastDir){
-            moveAction?.Invoke(newDir);
+            mover.Move(newDir);
             lastDir = newDir;
         }
         

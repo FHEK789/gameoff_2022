@@ -18,27 +18,18 @@ public class Mover : MonoBehaviour
     Vector2 moveDir = Vector2.zero;
     Vector2 lastMoveDir = Vector2.zero;    
     Animator animator;
-    Rigidbody2D rb2d;
-    PlayerInput playerInput;
-    private void OnEnable()
-    {
-        playerInput.moveAction += Move;
-    }
-    private void OnDisable()
-    {
-        playerInput.moveAction -= Move;
-    }
+    Rigidbody2D rb2d;    
+    
     private void Awake() {
         animator = GetComponent<Animator>();
-        rb2d = GetComponent<Rigidbody2D>();
-        playerInput = GetComponent<PlayerInput>();
+        rb2d = GetComponent<Rigidbody2D>();        
     }
     void Start()
     {
         
     }
 
-    void Move(Vector2 moveVector)
+    public void Move(Vector2 moveVector)
     {
         moveDir = moveVector;
             if (moveVector == Vector2.zero){
