@@ -628,8 +628,8 @@ TextureImporter:
         y: 345
         width: 25
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.44, y: -0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -754,8 +754,8 @@ TextureImporter:
         y: 233
         width: 36
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47222224, y: -0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -775,8 +775,8 @@ TextureImporter:
         y: 233
         width: 36
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: -0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -857,7 +857,7 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 208
-        width: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -919,9 +919,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 97
-        y: 193
+        y: 208
         width: 15
-        height: 30
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,9 +961,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 192
+        y: 208
         width: 13
-        height: 29
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -982,9 +982,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 192
+        y: 208
         width: 13
-        height: 31
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1150,9 +1150,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 274
-        y: 192
+        y: 208
         width: 14
-        height: 30
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1965,15 +1965,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_103
+      name: Tree4
       rect:
         serializedVersion: 2
         x: 96
         y: 144
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47745395, y: 0.049075127}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2028,15 +2028,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_106
+      name: Tree1
       rect:
         serializedVersion: 2
         x: 2
         y: 144
         width: 26
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.56783134, y: 0.059095528}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2049,15 +2049,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_107
+      name: Tree2
       rect:
         serializedVersion: 2
         x: 35
         y: 144
         width: 27
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5059385, y: 0.04389217}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2070,15 +2070,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_108
+      name: Tree3
       rect:
         serializedVersion: 2
         x: 70
         y: 144
         width: 19
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47468486, y: 0.06768472}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2091,15 +2091,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_109
+      name: Tree5
       rect:
         serializedVersion: 2
         x: 132
         y: 144
         width: 23
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4930294, y: 0.05292922}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2112,15 +2112,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_110
+      name: Tree6
       rect:
         serializedVersion: 2
         x: 165
         y: 144
         width: 20
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.53206635, y: 0.04984577}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2133,15 +2133,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_111
+      name: Tree7
       rect:
         serializedVersion: 2
         x: 193
         y: 144
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5025861, y: 0.051579952}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2154,15 +2154,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_112
+      name: Tree8
       rect:
         serializedVersion: 2
         x: 232
         y: 144
         width: 23
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3361863, y: 0.08992826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2175,15 +2175,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: winter_global_113
+      name: Tree9
       rect:
         serializedVersion: 2
         x: 256
         y: 144
-        width: 64
+        width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55511284, y: 0.14427042}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2846,6 +2846,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: winter_global_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 193
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1d048dcfacc58439760dac9bacdb99
+      internalID: 2004743162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winter_global_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 192
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6df84b7cf4cb640a8e3d2ba382cc77
+      internalID: 912721744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winter_global_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 192
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d0656fe5cfc9f44a3a9dba9a82b436
+      internalID: -541621046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winter_global_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be47ad08846fa534c90d5198f26a5c70
+      internalID: -1545778255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winter_global_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 192
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b90a8f50ec774443aba8d0f3623f943
+      internalID: 233674393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5275564, y: 0.08414698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8a8ee72195eac45a0917a7b884fc87
+      internalID: -2101495649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2867,9 +2993,9 @@ TextureImporter:
       winter_global_37: 1741209926
       winter_global_97: 770191472
       winter_global_56: 581471065
-      winter_global_15: -2101495649
       winter_global_73: -645068240
       winter_global_131: 1260326080
+      Tree4: 1770252871
       winter_global_101: 1758561197
       winter_global_86: -1761096902
       winter_global_6: -351139378
@@ -2881,13 +3007,12 @@ TextureImporter:
       winter_global_67: 1635316711
       winter_global_42: 628227023
       winter_global_49: 1444049638
-      winter_global_112: 1770941202
       winter_global_60: 717337999
       winter_global_89: -1535720109
       winter_global_55: 517844927
       wreath2: 974717939
       winter_global_63: -851152615
-      winter_global_106: -1163867038
+      winter_global_120: 76963378
       winter_global_118: 944657452
       winter_global_91: 798064375
       winter_global_84: -401032203
@@ -2896,20 +3021,21 @@ TextureImporter:
       winter_global_9: -510731892
       winter_global_43: -1879145784
       snowman6: 492809558
-      winter_global_120: 76963378
+      Tree9: 700782363
+      winter_global_128: 21618654
       winter_global_29: -1219002756
       winter_global_30: -831692677
-      winter_global_128: 21618654
-      winter_global_107: -380016395
+      snowman: -2143280030
       winter_global_102: -492926570
       winter_global_35: -1664464448
       winter_global_36: 1108826625
-      snowman: -2143280030
+      winter_global_14: 233674393
       winter_global_24: 614952966
       winter_global_92: 2131529105
       winter_global_0: -1359722483
       winter_global_8: 73899930
       winter_global_62: -677527857
+      Tree3: 1716160818
       winter_global_13: -1545778255
       winter_global_80: 621670220
       winter_global_127: -1886132827
@@ -2918,14 +3044,15 @@ TextureImporter:
       winter_global_100: -2104659051
       snowman2: -1753785730
       winter_global_45: -1190017749
+      winter_global_10: 2004743162
       winter_global_75: 1135389212
       winter_global_3: 1387096569
       winter_global_44: -655952717
       winter_global_125: 403424851
       winter_global_137: 1161532536
       winter_global_81: -2051190381
+      Tree6: 1045174530
       winter_global_39: 766314526
-      winter_global_110: 1045174530
       winter_global_77: -1935925653
       winter_global_66: 1242564735
       winter_global_68: -213571641
@@ -2954,9 +3081,11 @@ TextureImporter:
       winter_global_64: -1246580047
       winter_global_4: 831219355
       snowman_dog: 1147999991
+      Tree7: -313994097
       winter_global_1: 554924904
       winter_global_78: 780749225
       props_ball4: 1841881952
+      Tree5: 1410215929
       winter_global_94: -1673712296
       winter_global_72: 1860943103
       winter_global_52: -152292502
@@ -2964,13 +3093,13 @@ TextureImporter:
       winter_global_7: -653153224
       winter_global_105: -442155453
       winter_global_130: 1921891436
+      Tree1: -1163867038
       winter_global_27: 177894626
       winter_global_134: 790767104
       winter_global_2: -1242717724
       snowman5: -219659105
       winter_global_58: 163240379
       winter_global_117: 197619383
-      winter_global_113: 700782363
       snowman4: 356949972
       winter_global_47: -100584742
       winter_global_82: -588696672
@@ -2978,7 +3107,9 @@ TextureImporter:
       winter_global_98: 2074837861
       winter_global_122: 1605584546
       winter_global_31: -46040657
+      Tree10: -2101495649
       props_ball3: -615124061
+      winter_global_11: 912721744
       winter_global_32: -1443914233
       winter_global_96: -1488299432
       winter_global_51: -1505683619
@@ -2988,13 +3119,14 @@ TextureImporter:
       winter_global_126: -127991058
       winter_global_54: 582356695
       winter_global_129: 1565659776
-      winter_global_108: 1716160818
-      winter_global_103: 1770252871
+      Tree8: 1770941202
       winter_global_70: -1247334607
       winter_global_41: -310930955
       winter_global_74: 334508008
       winter_global_136: -235528203
       Lamp_street: -1884566932
+      Tree2: -380016395
+      winter_global_12: -541621046
       winter_global_88: -1631017448
       winter_global_114: 1087152031
       winter_global_132: 777107191
@@ -3002,10 +3134,8 @@ TextureImporter:
       winter_global_59: -2033456096
       winter_global_85: -1965874310
       winter_global_61: -200196590
-      winter_global_111: -313994097
       snowman_cat: 1886250731
       socks: 1056354656
-      winter_global_109: 1410215929
       winter_global_135: 903077860
       winter_global_40: -485018806
       winter_global_53: 1715963191

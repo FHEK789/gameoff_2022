@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcess
   - Water
   - UI
   - FakeUI
@@ -47,8 +47,11 @@ TagManager:
   - name: Stand
     uniqueID: 2988107447
     locked: 0
-  - name: Player
+  - name: World
     uniqueID: 1436246351
+    locked: 0
+  - name: WorldFront
+    uniqueID: 2471273171
     locked: 0
   - name: FakeUI
     uniqueID: 2606716999

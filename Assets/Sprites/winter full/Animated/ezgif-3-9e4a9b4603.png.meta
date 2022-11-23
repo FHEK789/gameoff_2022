@@ -120,12 +120,12 @@ TextureImporter:
       name: ezgif-3-9e4a9b4603_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 68
+        width: 80
         height: 128
-      alignment: 9
-      pivot: {x: 0.48529413, y: 0.0390625}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: ezgif-3-9e4a9b4603_1
       rect:
         serializedVersion: 2
-        x: 89
+        x: 80
         y: 0
-        width: 68
+        width: 80
         height: 128
-      alignment: 9
-      pivot: {x: 0.47058824, y: 0.0390625}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: ezgif-3-9e4a9b4603_2
       rect:
         serializedVersion: 2
-        x: 169
+        x: 160
         y: 0
-        width: 68
+        width: 80
         height: 128
-      alignment: 9
-      pivot: {x: 0.48529413, y: 0.0390625}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: ezgif-3-9e4a9b4603_3
       rect:
         serializedVersion: 2
-        x: 249
+        x: 240
         y: 0
-        width: 68
+        width: 80
         height: 128
-      alignment: 9
-      pivot: {x: 0.48529413, y: 0.0390625}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

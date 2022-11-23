@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5643395437945511514}
   - component: {fileID: 5643395437945511515}
   - component: {fileID: 613754366}
+  - component: {fileID: 881247668}
+  - component: {fileID: 1825844763601944383}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 1436246351
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2078752516, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
+  m_Sprite: {fileID: 658104065, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,7 +88,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &5643395437945511517
@@ -102,7 +104,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.65}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
 --- !u!50 &5643395437945511514
@@ -138,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7de6e81adf7aa47af33ea1b98ad035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 2.3
   canMove: 1
 --- !u!114 &613754366
 MonoBehaviour:
@@ -164,6 +166,34 @@ MonoBehaviour:
   - {fileID: 91290449, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
   - {fileID: 1653435687, guid: fd61da3a2783675409d2eac47f67587a, type: 3}
   changeTime: 0.1
+--- !u!114 &881247668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643395437945511527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a2ff4e3b81c6f489f04e11d2016e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointDistanceError: 0.5
+  path: {fileID: 0}
+--- !u!114 &1825844763601944383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643395437945511527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a2ff4e3b81c6f489f04e11d2016e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointDistanceError: 0.5
+  path: {fileID: 0}
 --- !u!1 &7603508440420572092
 GameObject:
   m_ObjectHideFlags: 0
