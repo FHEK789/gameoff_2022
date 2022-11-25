@@ -24,17 +24,8 @@ public class CharacterGenerator : MonoBehaviour
         
     }
     
-    public Sprite[] CreateRandomCharacter(Direction direction)
-    {
-        int lineIndex = 0;
-        switch (direction)
-        {
-            case Direction.top: lineIndex = 2;
-                break;
-            case Direction.bot: lineIndex = 3;
-                break;
-            default: lineIndex = 1; break;
-        }
+    public Texture2D CreateRandomCharacter()
+    {        
         newCharTexture = new Texture2D(256,128);
         Texture2D textureToMerge = new Texture2D(256,128,TextureFormat.RGBA32,1,true);
         Graphics.CopyTexture(baseSpriteSheets[GetRandomIndex(baseSpriteSheets)],textureToMerge);
@@ -44,7 +35,7 @@ public class CharacterGenerator : MonoBehaviour
         MergeTextures(textureToMerge,true);
         
         Graphics.CopyTexture(clothesSpriteSheets[GetRandomIndex(clothesSpriteSheets)],textureToMerge);
-        MergeTextures(textureToMerge,true);
+        MergeTextures(textureToMerge);
         
         Graphics.CopyTexture(pantsSpriteSheets[GetRandomIndex(pantsSpriteSheets)],textureToMerge);
         MergeTextures(textureToMerge);
@@ -53,12 +44,8 @@ public class CharacterGenerator : MonoBehaviour
         MergeTextures(textureToMerge);
 
         newCharTexture.Apply();
-        Sprite[] spr = new Sprite[8];
-        for (int i = 0; i < 8; i++)
-        {
-            spr[i] = Sprite.Create(newCharTexture, new Rect(32*i, 32*lineIndex, 32, 32), new Vector2(0.5f, 0), 16, 1, SpriteMeshType.FullRect);            
-        }
-        return spr;
+        
+        return newCharTexture;
     }
 
     private int GetRandomIndex(Texture2D[] array)
@@ -71,7 +58,7 @@ public class CharacterGenerator : MonoBehaviour
         Color color;
         for (int x = 0; x < 256; x++)
         {
-            for (int y = 0; y < 127; y++)
+            for (int y = 0; y < 128; y++)
             {
                 color = addedTexture.GetPixel(x, y);
                 if (!isFirstImage && color.a == 0) continue;

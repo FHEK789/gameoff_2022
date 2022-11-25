@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{332d315d-47eb-5b8f-25b8-eb0eb20252b5}</ProjectGuid>
+    <ProjectGuid>{0288797d-9dde-ddc9-0be6-f0028312f2f1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,7 +55,6 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\Sprites\winter full\read me.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -67,10 +66,8 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Sprites\winter full\list.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Sprites\winter full\license.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -320,19 +317,19 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>F:\UNITY\Gamejam22\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
-        <HintPath>F:\UNITY\Gamejam22\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
-        <HintPath>F:\UNITY\Gamejam22\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
-        <HintPath>F:\UNITY\Gamejam22\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
-        <HintPath>F:\UNITY\Gamejam22\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -701,187 +698,187 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>F:\UNITY\Gamejam22\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ruda\gameoff_2022\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{bff93b86-c5cb-2096-87f0-e78a64463007}</Project>
+      <Project>{c62f32cb-ac84-dd83-6a86-5815888a75f5}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
-      <Project>{68d88477-ab4a-81ec-a758-e5234eac5de3}</Project>
+      <Project>{4c15bde7-de2e-3d0b-5f90-6cdc88f20f57}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{5d677bae-1072-d170-46b2-671c44c4eb14}</Project>
+      <Project>{81a44cb5-d695-7476-f7e5-f7d3fe2adc07}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
-      <Project>{77625923-ea7e-5fe6-74dc-436c120e77d4}</Project>
+      <Project>{4ba4ba29-d1ed-ecd7-4fed-f9e6b5aa9e6f}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{96d579e2-88d4-d755-e220-02111f3f4fe9}</Project>
+      <Project>{73a6b2ce-d08d-0d67-34cf-279151db5470}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PsdPlugin.csproj">
-      <Project>{63f36866-eb32-2cbf-ea85-375dfa90e04e}</Project>
+      <Project>{e1518f91-ef5f-412d-a1fa-0a2755a0f25a}</Project>
       <Name>PsdPlugin</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{1b45df2b-86d1-5e96-042b-fa08023de811}</Project>
+      <Project>{74d23cc6-98e1-9bed-5d70-3481bcbe6586}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{749bd413-7993-95f0-9de6-54d3f53277cb}</Project>
+      <Project>{4b79e6ae-817c-0f7a-7673-6dfc7b44e344}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
-      <Project>{f64c3cd2-74a0-50af-00a9-cd264da2556d}</Project>
+      <Project>{27808f18-373d-a2be-001e-1f143f7bfd34}</Project>
       <Name>Unity.Sysroot.Linux_x86_64</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{ddf244f6-82aa-a8d6-d80c-9d6cc0c1aecf}</Project>
+      <Project>{3256cdd1-9278-4fa2-8fc1-b9fa2af414c7}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{59302b43-d895-d9aa-e758-0394df3db719}</Project>
+      <Project>{d10ac7e2-3999-fd4a-5cf5-5fc979f3c250}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Editor.csproj">
-      <Project>{d94ddda2-cbd1-dd96-d212-0d844c1bcea5}</Project>
+      <Project>{3c5f1a3d-10bc-47da-5cec-0b218fb6e84c}</Project>
       <Name>Unity.Burst.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
-      <Project>{d48ae197-c2fa-8a20-1913-1e93ef760629}</Project>
+      <Project>{3759dd40-4828-5d9b-b66c-1539f61b17f7}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Editor.csproj">
-      <Project>{2af227dc-0176-5f85-b2ad-566bd6b84c31}</Project>
+      <Project>{39cce176-9b41-0aef-71bf-45cf5dff3304}</Project>
       <Name>Unity.2D.IK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Path.Editor.csproj">
-      <Project>{56ee2bcb-0000-5d64-2625-9da848371643}</Project>
+      <Project>{7dee7fc3-2441-ff20-8b51-009d9cd9a1e6}</Project>
       <Name>Unity.2D.Path.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
-      <Project>{a46995b5-6b64-6fad-d2cb-ccd5a7409297}</Project>
+      <Project>{826e409c-cbc9-f365-e384-c3ff78058314}</Project>
       <Name>Unity.2D.Psdimporter.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{d09e3e0d-f9d3-ce5d-5765-a267766808a9}</Project>
+      <Project>{18eb8112-f8ff-c07e-e836-57d094c19dcf}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{d8792597-8690-e77a-343a-c4de84dbdffe}</Project>
+      <Project>{59e2eae4-f0f7-1a78-349d-7856e6d4835a}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{0bf58113-e1ed-b289-5b3f-a2fc27385da7}</Project>
+      <Project>{f5069915-b5cf-d288-37b2-88f54c335f34}</Project>
       <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{7e3d0251-1287-8809-54c0-b62f93e6e941}</Project>
+      <Project>{0f95a894-61b4-0de4-83db-1c6952e9aa4b}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{ad538b86-0103-8738-2f5c-0cb40754bedd}</Project>
+      <Project>{b82f22a8-cad8-57cf-282d-750cdcef5e77}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Cinemachine.csproj">
-      <Project>{5bb7997c-48ad-622a-7ca4-db0ad9dc4ffb}</Project>
+      <Project>{232eb44b-640c-565e-d10c-abf4fbe169dc}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{2f86a1cb-5345-cc0d-242c-e3f557995345}</Project>
+      <Project>{e246ceef-5525-d92d-7fa1-9181e25a0c39}</Project>
       <Name>Unity.Burst</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{4fd2bd4f-dcea-b8a5-1433-627a6962de05}</Project>
+      <Project>{dc67e345-07b1-f058-d2a1-baef7d661a83}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{06f0656b-5bbe-16d7-9a43-75040df88f17}</Project>
+      <Project>{f0868b00-e4de-d336-b1ae-5d93722dd8f4}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{3733c993-6ce5-1854-b5f5-9035a7083712}</Project>
+      <Project>{06b93fa7-963e-7be8-d610-f4d1fe1af101}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
-      <Project>{4534b06c-d941-eaac-c372-7c8044410c60}</Project>
+      <Project>{c23c0f1a-091b-a187-c42b-9aebbbf1e214}</Project>
       <Name>Unity.2D.PixelPerfect.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64.csproj">
-      <Project>{3dbe4f56-964b-3748-f503-4bc21170ef63}</Project>
+      <Project>{bc5133a9-8a51-8dbb-ed3c-b686bd64bc8d}</Project>
       <Name>Unity.Toolchain.Win-x86_64-Linux-x86_64</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{ac3f62b9-c279-ae2d-baec-38a74af80608}</Project>
+      <Project>{8dc8afad-dba9-42f7-363f-dcdc35836c31}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{ccb12ba0-a5fe-0b76-663c-fce7d2b82aee}</Project>
+      <Project>{955756a5-713f-51ba-42c8-ae9d76af9631}</Project>
       <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{ae0a3fe1-7625-2a8f-31df-e37d56eb36b6}</Project>
+      <Project>{16b068e8-32de-2820-4693-d345b6757b3e}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
-      <Project>{1c8f2f92-0a78-84a2-4d8d-20e0ef83ebcd}</Project>
+      <Project>{a3499e29-b46c-fdb7-ec49-8bc58115fed4}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
-      <Project>{1af3b722-552d-6398-2965-1420f3063d69}</Project>
+      <Project>{d0d2133e-da3c-0e45-5a94-4c08c7b8005f}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{d75ba3a0-8ce8-c8ce-eb39-2cc95a740b6d}</Project>
+      <Project>{0fafa56a-dd48-56eb-a5ad-c93175f9b4d6}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
-      <Project>{a6ef1382-c380-9dfb-9c70-2494bffd1a35}</Project>
+      <Project>{8e541424-26bb-d532-4e4b-807ebc3cbc5c}</Project>
       <Name>Unity.SysrootPackage.Editor</Name>
     </ProjectReference>
   </ItemGroup>
