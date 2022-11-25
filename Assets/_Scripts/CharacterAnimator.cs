@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CharacterAnimator : MonoBehaviour
 {
-    [SerializeField] List<Sprite> sideSprites;
-    [SerializeField] List<Sprite> frontSprites;
-    [SerializeField] List<Sprite> backSprites;
+    Sprite[] sideSprites;
+    Sprite[] frontSprites;
+    Sprite[] backSprites;
     [SerializeField] float changeTime = 0.1f;
     Mover mover;
-    List<Sprite> actualList;
+    Sprite[] actualList;
     float timer;
     SpriteRenderer spriteRenderer;
     int actualSpriteIndex;
@@ -30,6 +30,9 @@ public class CharacterAnimator : MonoBehaviour
     }
     void Start()
     {
+        sideSprites = CharacterGenerator.Instance.CreateRandomCharacter(Direction.right);
+        frontSprites = CharacterGenerator.Instance.CreateRandomCharacter(Direction.bot);
+        backSprites = CharacterGenerator.Instance.CreateRandomCharacter(Direction.top);
         actualList = sideSprites;
     }
     void ChangeMovementAnimation(Direction direction, bool isMoving)
@@ -72,7 +75,7 @@ public class CharacterAnimator : MonoBehaviour
         {
             timer = 0;
             //change sprite
-            if(++actualSpriteIndex == actualList.Count)
+            if(++actualSpriteIndex == actualList.Length)
             {
                 actualSpriteIndex = 0;
             }
